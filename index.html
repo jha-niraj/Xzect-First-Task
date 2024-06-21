@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Jekyll Theme</title>
+
+    <!-- Link to the CSS File -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Link to the Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Link to the Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="firstNavChild">
+            <h1>Niraj Jha</h1>
+        </div>
+        <div class="secondNavChild">
+            <ul class="links">
+                <li class="item">Home</li>
+                <li class="item">Projects</li>
+                <li class="item">Blog</li>
+                <li class="item" id="pages" 
+                    style="display: flex; gap: 5px; align-items: center; justify-content: center;"
+                >
+                    Pages <i class="fa-solid fa-angle-down"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="thirdNavChild">
+            <i class="fa-solid fa-moon"></i>
+        </div>
+    </nav>
+    <hr>
+    <main>
+        <div class="main-container">
+            <div class="firstMainChild">
+                <img src="./Images/2.jpeg" alt="Main Page Image" />
+            </div>
+            <div class="secondMainChild">
+                <div class="secondChildContent">
+                    <h1>
+                        <span>I'm Niraj Jha.</span> I will make an Website which makes you profit.
+                    </h1>
+                    <p>
+                        So, If you're looking for websites that have a high visual impact on your target audience, while also aligning with your brand, Let's talk about your project in more detail.
+                    </p>
+                    <div class="inputBox">
+                        <input type="text" class="updatesBox" placeholder="Enter your Email" />
+                        <button class="updatesBtn">Get Updates</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>2024 © Niraj Jha. Crafted & Designed by Niraj Jha.</p>
+        <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+    </footer>
+
+    <script>
+        const pages = document.getElementById('pages');
+        const dropdown = document.createElement('div');
+        dropdown.className = 'dropdown';
+        dropdown.style.display = 'none';
+        dropdown.innerHTML = `
+            <ul>
+                <li>Page 1</li>
+                <li>Page 2</li>
+                <li>Page 3</li>
+            </ul>
+        `;
+        pages.appendChild(dropdown);
+
+        pages.addEventListener('mouseover', () => {
+            dropdown.style.display = 'block';
+        });
+
+        pages.addEventListener('mouseout', () => {
+            dropdown.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

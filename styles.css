@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Navabr Section */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+}
+.secondNavChild {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px;
+    list-style-type: none;
+}
+.item {
+    padding: 10px;
+    cursor: pointer;
+}
+.item:hover {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+.hr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+/* Styles for the Hidden Element which will show only when we hover over the Pages */
+.secondNavChild .item:hover .dropdown {
+    transition: all 0.5s ease;
+}
+.dropdown {
+    position: absolute;
+    top: 60px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1;
+    border-radius: 10px;
+    height: 200px;
+    transition: all ease-in-out 0.3s;
+}
+.dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.dropdown li {
+    padding: 10px;
+    color: black;
+    border-bottom: 1px solid #ccc;
+}
+.dropdown li:hover {
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+.dropdown li:last-child {
+    border-bottom: none;
+}
+
+
+/* Main Container Section */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: around;
+    width: 80%;
+}
+.firstMainChild {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.firstNavChild > h1 {
+    font-size: 40px;
+}
+.firstMainChild > img {
+    height: 600px;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 30px;
+}
+.secondMainChild {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+.secondChildContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: 550px;
+}
+.secondChildContent > * {
+    padding: 20px;
+}
+.secondChildContent > h1 {
+    font-size: 3rem;
+}
+.secondChildContent > h1 > span {
+    font-weight: bolder;
+    background-color: rgb(102, 172, 102);
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.secondChildContent > p {
+    font-size: 1.5rem;
+}
+.inputBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.updatesBox {
+    height: 50px;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid rgb(185, 184, 184);
+    font-size: medium;
+    padding-left: 10px;
+}
+.updatesBtn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    right: 265px;
+    border-radius: 20px;
+}
+.updatesBtn:hover {
+    background-color: #3e8e41;
+}
+
+/* Footer Section */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+}
+footer > p {
+    font-size: 15px;
+    font-weight: 400;
+}
+footer > i {
+    font-size: 1.6rem;
+}
+footer > i:hover {
+    background-color: rgb(205, 195, 195);
+    border-radius: 16px;
+    padding: 5px;
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+}
